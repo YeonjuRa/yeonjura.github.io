@@ -252,13 +252,14 @@
 																<span class="fontred">AWS</span>를사용한 프로젝트를 <span class="fontred">클라우드에 배포</span>하는과정을 배웠습니다.<br>
 															</li>
 															<li>	
-																<strong>5개월차</strong><br>
+																<strong>5개월-6개월차</strong><br>
 																&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-																
-															</li>
-															<li>	
-																<strong>6개월차</strong><br>
+																현재까지 배운 내용을 활용하여 진행하는 기업연계 파이널 프로젝트로 기업에서 오신 멘토님과 함께 그룹웨어
 																&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																인트라넷 시스템 구축 프로젝트를 진행 하고있습니다.
+																요구사항 수집과 분석, 정의, WBS, 데이터베이스 
+																설계 후 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기능을 구현하였습니다.
+																&nbsp;
 																
 															</li>
 															
@@ -370,7 +371,7 @@
 							<div class="col-md-12">
 								<div class="timeline-centered">
 									<!-- 최종 팀프로젝트 -->
-									<article class="timeline-entry animate-box"
+										<article class="timeline-entry animate-box"
 										data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-3">
@@ -378,27 +379,83 @@
 											</div>
 											<div class="timeline-label">
 												<h2>
-													파이널 프로젝트<span> 2023.06.24 ~ 2023.07.</span>
+													파이널 프로젝트 <span> 2023.06.24 ~ 2023.08.05</span>
 												</h2>
 												<h2 style="color: #46AAFF;">
-													<strong>--</strong>
+													<strong>그룹웨어 인트라넷 FoodBee</strong>
 												</h2>
 												<p>
-													<img src="#" style="width: 80%;">
+													<img src="images/final_main.png" style="width: 80%;" onclick="window.open('http://13.124.146.101/foodbee/login')">
 												</p>
 												<p>
 													<strong>Keyword</strong> <br> # Spring boot # Session
-													# Filter # JAVA # JS # JQuery # aJax # MyBatis <br> #
+													# Interceptor # JAVA # JQuery # AJax # MyBatis <br>
 													
 												</p>
 												<p>
+													
+													<strong>개발 인원 : 4명</strong><br>
+													기업에서 온 멘토님과 함께한 파이널 팀 프로젝트입니다. 
+													<br>
 													<strong>Function</strong> <br>
-													<strong></strong><br>
+													온라인 식품 마켓 인트라넷을 구현하였습니다.<br> 
+													<br>
+													사원 초대 및 등록, 로그인 로그아웃, 일정 관리, 회의실 예약, 사원 마이페이지 조회 및 수정, 
+													<br>전자결재, 매출 그래프 조회, 쪽지함, 커뮤니티 등이 있습니다.<br>
+
+													<br>
+													다음 주소 API를 활용하여 사원 인트라넷 등록/마이페이지에서 주소를 입력할수 있게 하였고<br>
+													 FullCalendar를 사용해서 일정 캘린더를 구현했습니다.<br>
+													<br>
+													<br> 
+													<strong>담당 업무</strong><br>
+													<br>
+													<b>[신규 사원등록]</b>
+													<br>
+														- 기존 인사팀이 사원 초대 후 사원의 메일로 받은 링크를 통한 사원등록 구현<br>
+														- Spring Validation을 사용하여 등록시 입력되는 사원 개인정보 검증, 포워딩 시 입력값 유지<br>
+														- 파라미터로 들어온 사원번호를 중복검사 하여 이미 등록된 사번은 신규등록이 불가하도록 방지<br>
+
+
+													<b>[쪽지함]</b><br>
+														- 받은 쪽지함/보낸 쪽지함에서 읽음/안 읽음 값에 따라 카테고리 탭으로 분기<br>
+														- 새 쪽지 작성시에 사원리스트 모달에서 사원선택 가능(복수선택 가능)<br>
+														- 휴지통에서 쪽지함으로 복구 또는 영구삭제 가능<br>
+														- Spring Scheduler 를 사용해 휴지통 이동 일시에서 15일이 지난 쪽지들은 자동삭제되도록 구현<br>
+														- 쪽지 상세보기에서 첨부파일 다운로드 구현<br>
+														
+														<br>
+													<b>[사내 익명게시판]</b><br>
+														- 게시판 리스트에서 잡담/회사이야기/질문 으로 카테고리 탭 분기<br>
+														- 카테고리별로 키워드를 입력하여 제목명으로 검색 가능<br>
+														- 게시글 상세보기에서 댓글 등록/조회/삭제 가능<br>
+														- 글/댓글 작성자 본인 삭제일 경우 작성 시에 입력한 비밀번호 검증을 통해 삭제 진행<br>
+														- 관리자 권한으로 접근 시 관리자 삭제 버튼 생성.관리자는 삭제 사유를 입력하여 글/댓글 삭제 가능. <br>관리자 권한으로 삭제된 글/
+														댓글은 “관리자에 의해 삭제된 글/댓글입니다” 문구로 표시
+
+													<b>[결재 기안서 작성]</b><br>
+														- 기본기안서, 매출보고서, 휴가신청서, 출장신청서, 지출결의서 총 5개의 기안서 작성폼 구현<br>
+														- 기안 작성 시 모달로 띄워진 사원리스트에서 중간결재자/최종결재자/수신참조자 선택가능<br>
+														- 기안서 작성 전 기안자의 결재사인 등록 여부에 따라 분기. <br>사인이 없을 경우 기안서 작성은 불가하고 마이페이지로 리다이렉트
+														되어 결재 사인 등록 가능
+
 													
 												</p>
 												<p>
 													<strong>Development Environment</strong> <br>
+													Language: Java17, HTML5, CSS3,JavaScript, SQL<br>
+													Framework: SpringBoot, MyBatis, BootStrap<br>
+													Library: JSTL, JQuery, Lombok<br>
+													API: FullCalendar API, Daum Postcode API, Canvas API<br>
+													Database: MariaDB<br>
+													WAS: Tomcat 10.1<br>
+													OS: Windows, Mac OS<br>
+													Tools: STS4, HeidiSQL, Sequel Ace, Github<br>
 													
+												</p>
+												<p>
+													<strong>Service Environment</strong><br> OS: Ubuntu
+													(20.04) <br> Platform : AWS Lightsail
 												</p>
 												<p>
 													
@@ -406,11 +463,13 @@
 												<p>
 
 													<button type="button" class="btn btn-link"
-														onclick="window.open('')">Github</button>
+														onclick="window.open('https://github.com/GDJ80-Final/FoodBee_final')">Github</button>
 													<button type="button" class="btn btn-link"
-														onclick="window.open('')">ERD</button>
+														onclick="window.open('images/FoodBee(MariaDB)_ERD.png')">ERD</button>
 													<button type="button" class="btn btn-primary"
-														onclick="window.open('')">프로젝트</button>
+														onclick="window.open('http://13.124.146.101/foodbee/login')">프로젝트</button>
+													<button type="button" class="btn btn-primary"
+														onclick="window.open('https://youtu.be/h3_blJrzBXY?si=JU7Z8Tawct4s438F')">프로젝트 시연영상</button>
 												</p>
 											</div>
 										</div>
